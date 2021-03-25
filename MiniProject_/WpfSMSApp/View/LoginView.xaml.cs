@@ -11,28 +11,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WpfSMSApp.View;
 
-namespace WpfSMSApp
+namespace WpfSMSApp.View
 {
     /// <summary>
-    /// MainWindow.xaml에 대한 상호 작용 논리
+    /// LoginView.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class MainWindow : MetroWindow
+    public partial class LoginView : MetroWindow
     {
-        public MainWindow()
+        public LoginView()
         {
             InitializeComponent();
-        }
-
-        private void MetroWindow_ContentRendered(object sender, EventArgs e)
-        {
-            LoginView view = new LoginView();
-            view.Owner = this;
-            view.WindowStartupLocation = WindowStartupLocation.CenterOwner;
-            view.ShowDialog();
         }
     }
 }
